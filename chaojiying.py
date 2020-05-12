@@ -47,6 +47,12 @@ class Chaojiying_Client(object):
         r = requests.post('http://upload.chaojiying.net/Upload/ReportError.php', data=params, headers=self.headers)
         return r.json()
 
+'''
+# 返回结果
+result = cjy.PostPic(im, CJY_KIND)
+# 获取验证码
+code = result['pic_str']
+'''
 
 # if __name__ == '__main__':
 #     chaojiying = Chaojiying_Client('超级鹰用户名', '超级鹰用户名的密码', '96001')  # 用户中心>>软件ID 生成一个替换 96001
